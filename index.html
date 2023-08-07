@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Pokémon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="./src/imagens/Pokemon-Logo.svg" alt="Logo Pokemon">
+    </header>
+
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="titulo"> Selecione um Pokémon </h1>
+            <ul class="lista-de-personagens">
+                <li class="personagem selecionado" id="charmander" data-name="Charmander" data-description="Evolui para Charmeleon começando no nível 16, que evolui para Charizard a partir do nível 36.">
+                    <img src="./src/imagens/Card-Charmander.jpg" alt="Charmander">
+                </li>
+                <li class="personagem" id="cyndaquil" data-name="Cyndaquil" data-description="Evolui para Quilava começando no nível 14, que evolui para Typhlosion a partir do nível 36.">
+                    <img src="./src/imagens/Card-Cyndaquil.jpg" alt="Personagem Cyndaquil" >
+                </li>
+                <li class="personagem" id="torchic" data-name="Torchic" data-description="Evolui para Combusken a partir do nível 16, que evolui para Blaziken a partir do nível 36.">
+                    <img src="./src/imagens/Card-Torchic.jpg" alt="Torchic">
+                </li>
+                <li class="personagem" id="chimchar" data-name="Chimchar" data-description="Evolui para Monferno começando no nível 14, que evolui para Infernape a partir do nível 36.">
+                    <img src="./src/imagens/Card-Chimchar.jpg" alt="Chimchar">
+                </li>
+                <li class="personagem" id="tepig" data-name="Tepig" data-description="Evolui para Pignite a partir do nível 17, que evolui para Emboar a partir do nível 36.">
+                    <img src="./src/imagens/Card-Tepig.jpg" alt="Tepig">
+                </li>
+                <li class="personagem" id="fennekin" data-name="Fennekin" data-description="Evolui para Braixen a partir do nível 16, que evolui para Delphox a partir do nível 36.">
+                    <img src="./src/imagens/Card-Fennekin.jpg" alt="Fennekin">
+                </li>
+                <li class="personagem" id="litten" data-name="Litten" data-description="Evolui para Torracat a partir do nível 17, que evolui para Incineroar a partir do nível 34.">
+                    <img src="./src/imagens/Card-Litten.jpg" alt="Litten">
+                </li>
+                <li class="personagem" id="scorbunny" data-name="Scorbunny" data-description="Eevolui para Raboot a partir do nível 16, que evolui para Cinderace a partir do nível 35.">
+                    <img src="./src/imagens/Card-Scorbunny.jpg" alt="Scorbunny">
+                </li>
+            </ul>
+        </section>
+        <section class="personagem-selecionado">
+            <img class="personagem-grande" src="./src/imagens/Big-Card-Charmander.png" alt="Personagem Selecionado">
+
+            <div class="informacoes-personagens">
+                <h2 class="nome-personagem" id="nome-personagem">Charmander</h2>
+                <p class="descricao-personagem" id="descricao-personagem">Ele tem o poder de dissipar rajadas óticas. Esse poder foi adquirido por conta de um acidente em sua infância. Atualmente ele não consegue controlá-lo</p>
+            </div>
+        </section>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
